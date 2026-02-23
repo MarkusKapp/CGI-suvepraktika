@@ -1,0 +1,18 @@
+# General
+.DS_Store
+*.log
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.AppleDouble
+.LSOverride
+Thumbs.db
