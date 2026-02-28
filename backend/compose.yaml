@@ -2,7 +2,7 @@ services:
   postgres:
     image: 'postgres:14.1'
     environment:
-      - 'POSTGRES_PASSWORD=kalamees'
+      - 'POSTGRES_PASSWORD=password'
       - 'POSTGRES_USER=postgres'
     ports:
       - '5432:5432'
@@ -11,4 +11,3 @@ services:
 
 volumes:
   postgres-data:
-
