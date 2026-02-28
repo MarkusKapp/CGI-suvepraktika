@@ -64,4 +64,16 @@
             </column>
         </createTable>
     </changeSet>
+
+    <changeSet id="2025-28-02 Remove name from tables" author="Markus Kapp">
+        <dropColumn tableName="tables" columnName="name"/>
+    </changeSet>
+
+    <changeSet id="2025-28-02 Add near_wc to tables" author="Markus Kapp">
+        <addColumn tableName="tables">
+            <column name="near_wc" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
 </databaseChangeLog>
