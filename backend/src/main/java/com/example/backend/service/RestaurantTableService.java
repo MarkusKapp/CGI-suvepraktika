@@ -14,12 +14,12 @@ import java.util.List;
 @Slf4j
 public class RestaurantTableService {
     private final RestaurantTableRepository restaurantTableRepository;
+    private final RestaurantTableMapper restaurantTableMapper;
 
     public List<RestaurantTableResponseDto> getAllTables() {
-        var tables = restaurantTableRepository.findAll();
         return restaurantTableRepository.findAll()
                 .stream()
-                .map(RestaurantTableMapper::toDto)
+                .map(restaurantTableMapper::toDto)
                 .toList();
     }
 }

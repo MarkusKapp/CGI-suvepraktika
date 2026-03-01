@@ -1,0 +1,4 @@
+### Get all restaurant tables
+GET http://localhost:8080/api/public/tables
+Accept: application/json
+
